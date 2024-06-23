@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Marvel';
+  src: url('./assets/fonts/Marvel-Regular.ttf') format('truetype'); /* ajustez le chemin selon l'emplacement de vos fichiers */
+}
+
+* {
+  font-family: 'Marvel', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
