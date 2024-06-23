@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import "../pages/comics.css";
 
 const Comics = () => {
   const [data, setData] = useState([]);
@@ -28,9 +29,6 @@ const Comics = () => {
     <div>Chargement...</div>
   ) : (
     <>
-      <div>
-        <h1>Comics Marvel</h1>
-      </div>
       <div className="comics-list">
         {data.map((data) => (
           <div key={data._id} className="comic-card">
@@ -40,7 +38,6 @@ const Comics = () => {
             />
             <h2>{data.title}</h2>
             <p>{data.description}</p>
-            <Link to={`/characters/${data._id}/comics`}>View Comics</Link>
           </div>
         ))}
       </div>
