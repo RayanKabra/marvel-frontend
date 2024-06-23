@@ -36,8 +36,8 @@ const Characters = () => {
               src={`${data.thumbnail.path}.${data.thumbnail.extension}`}
               alt={data.name}
             />
-            <h2>{data.name}</h2>
-            <p>{data.description}</p>
+            <h2 className="content-title">{data.name}</h2>
+            <p className="content-description">{data.description}</p>
             <Link to={`/characters/:id/comics`}>View Comics</Link>
           </div>
         ))}

@@ -36,8 +36,8 @@ const Comics = () => {
               src={`${data.thumbnail.path}.${data.thumbnail.extension}`}
               alt={data.name}
             />
-            <h2>{data.title}</h2>
-            <p>{data.description}</p>
+            <h2 className="content-title">{data.title}</h2>
+            <p className="content-description">{data.description}</p>
           </div>
         ))}
       </div>
