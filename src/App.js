@@ -5,7 +5,7 @@ import Characters from "./components/Characters";
 import Header from "./components/Header";
 //Import Pages
 import Comics from "./pages/Comics";
-import Favorites from "./pages/Favorites";
+// import Favorites from "./pages/Favorites";
 
 function App() {
   return (

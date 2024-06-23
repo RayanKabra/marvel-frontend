@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Comics = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [page, setPage] = useState(0);
+  // const [page, setPage] = useState(0);
 
   const fetchData = async () => {
     try {
